@@ -1,0 +1,17 @@
+section#grid {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+div.tile {
+	background-color: grey;
+}
+
+div.tile.activated {
+	background-color: cyan;
+}
+
+div.tile.active {
+	background-color: magenta;
+}
+
