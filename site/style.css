@@ -5,6 +5,9 @@ section#grid {
 
 div.tile {
 	background-color: grey;
+	width: 1em;
+	aspect-ratio: 1 / 1;
+	flex-basis: 6.25%;
 }
 
 div.tile.activated {
