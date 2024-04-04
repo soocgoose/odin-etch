@@ -1,4 +1,4 @@
-let grid = document.querySelector('#grid');
+const grid = document.querySelector('#grid');
 
 
 function createTileGrid(sideLength = 16) {
