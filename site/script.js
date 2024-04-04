@@ -1,5 +1,11 @@
 const grid = document.querySelector('#grid');
+const settings = document.querySelector('#settings');
 
+document.querySelector('#clear-grid').addEventListener('click', (event) => {
+	for (let i = 0; i < grid.children.length; i++) {
+		grid.children[i].className = "tile";
+	}
+});
 
 function createTileGrid(sideLength = 16) {
 	const tileBasis = 100 / sideLength;
