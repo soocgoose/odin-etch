@@ -17,6 +17,7 @@ document.querySelector('#clear-grid').addEventListener('click', (event) => {
 
 function createTileGrid(sideLength = 16) {
 	const tileBasis = 100 / sideLength;
+	gridSize.value = sideLength;
 
 	for (let i = 0; i < Math.pow(sideLength, 2); i++) {
 		let tile = document.createElement("div");
@@ -29,8 +30,6 @@ function createTileGrid(sideLength = 16) {
 
 		grid.appendChild(tile);
 	}
-
-	gridSize.value = sideLength;
 }
 
 createTileGrid();
