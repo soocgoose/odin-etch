@@ -18,6 +18,10 @@ div.tile.active {
 	background-color: magenta;
 }
 
+button#set-grid-size {
+	background-color: cyan;
+}
+
 button#clear-grid {
 	background-color: magenta;
 }

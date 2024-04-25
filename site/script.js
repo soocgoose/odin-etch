@@ -1,5 +1,13 @@
+const clamp = (num, min, max) => Math.min(Math.max(num, min), max);
+
 const grid = document.querySelector('#grid');
 const settings = document.querySelector('#settings');
+
+const gridSize = document.querySelector('#grid-size');
+document.querySelector('#set-grid-size').addEventListener('click', (event) => {
+	grid.textContent = '';
+	createTileGrid(clamp(gridSize.value, 1, 100));
+});
 
 document.querySelector('#clear-grid').addEventListener('click', (event) => {
 	for (let i = 0; i < grid.children.length; i++) {
