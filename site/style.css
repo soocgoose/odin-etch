@@ -10,6 +10,10 @@ section#grid {
 	max-width: 33em;
 }
 
+section#settings {
+	padding: 1em;
+}
+
 div.tile {
 	background-color: grey;
 	width: 1em;
