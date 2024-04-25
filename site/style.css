@@ -1,6 +1,7 @@
 section#grid {
 	display: flex;
 	flex-wrap: wrap;
+	max-width: 33em;
 }
 
 div.tile {
