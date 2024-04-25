@@ -29,6 +29,8 @@ function createTileGrid(sideLength = 16) {
 
 		grid.appendChild(tile);
 	}
+
+	gridSize.value = sideLength;
 }
 
 createTileGrid();
